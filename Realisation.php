@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="stylesheet" href="style.css" />
-			<link rel="stylesheet" media="screen and (max-device-width: 720px)" href="styleIphone.css" />
-			<link rel="stylesheet" media="screen and (max-width: 720px)" href="styleIphone.css" />
+		<?php
+			include("include/link.php");
+		?>
 			<!--Lien bootstrap -->
 			<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
 			<!-- Fin lien -->
@@ -59,68 +59,24 @@
 		    </script>
 
 			<!-- Fin JS-->
-		<link rel="icon" href="image/doc.ico" />
-		<title>CV Gaëtan PETITJEAN</title>
 	</head>
 	<body>
 	<!-- corps du document -->
 	<header>
-		Gaëtan PETITJEAN
-		<br />
-		<small><i>Formation WebOgreen</i></small>
+		<?php
+			include("include/head.php");
+		?>
 	</header>
 	<br />
 	<aside>
-		<table>
-			<tr>
-				<td><h4>Gaëtan PETITJEAN</h4></td>
-			</tr>
-			<tr>
-				<td><img id="photo" src="image/photoCV.png" alt="Photo CV"/>23 ans
-				<br />
-				Célibataire
-				<br />
-				Verdun (55100)
-				<br />
-				Permis de conduire
-				</td>
-			<tr>
-				<td><h4>Mes coordonnées</h4></td>
-			</tr>
-			<tr>
-				<td><img src="image/portable.png" alt="portable" /> 07 85 31 51 07</td>
-			</tr>
-			<tr>
-				<td><img src="image/mail.png" alt="mail" /><a href="mailto:petitjean.gaetan@gmail.com" target="_blank">petitjean.gaetan@gmail.com</a></td>
-			</tr>
-			<tr>
-				<td><h4>Situation professionnelle</h4></td>
-			</tr>
-			<tr>
-				<td><img src="image/boss.png" alt="situation professionnelle" /> En Formation</td>
-			</tr>
-			<tr>
-				<td><img src="image/date.png" alt="Date" />
-				<script language="javascript">
-				today = new Date();
-				document.write("Nous sommes le ",today.getDate(),"/",today.getMonth()+1,"/","2"+today.getYear()-100);
-				</script>
-			</tr>
-		</table>
+		<?php
+			include("include/menugauche.php");
+		?>
 	</aside>
 	<section>
-		<nav>
-			<table id="nav" border="1">
-				<tr>
-					<td class="onglet"><a href="Accueil.html">Accueil</a></td>
-					<td class="onglet"><a href="Formation.html">Formations</a></td>
-					<td class="onglet"><a href="Experience.html">Expériences</a></td>
-					<td class="onglet"><a href="Competence.html">Compétences</a></td>
-					<td class="onglet"><a href="Realisation.html">Réalisations</a></td>
-					<td class="onglet"><a href="Loisir.html">Loisirs</a></td>
-				</tr>
-			</table>
-		</nav>
+		<?php
+			include("include/onglets.php");
+		?>
 		<article>
 		<!-- seulement modifié article -->
 		<div class="container">

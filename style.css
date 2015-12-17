@@ -41,6 +41,15 @@ height:90px;
 float:left;
 left:20px;
 top:150px;
+margin-right:4px;
+}
+
+.presentation{
+  margin:2px;
+}
+
+#ico_mail{
+  margin-right:2px;
 }
 
 a
@@ -103,6 +112,17 @@ h3
 {
 font-weight:normal;
 }
+
+p
+{
+  margin:15px;
+}
+
+.competance{
+  margin:13px;
+}
+
+
 
 #mail
 {

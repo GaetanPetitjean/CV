@@ -28,6 +28,15 @@ aside
 display:none;
 }
 
+p
+{
+  margin:15px;
+}
+
+.competance{
+  margin:13px;
+}
+
 a
 {
 color:white;
